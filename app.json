@@ -1,0 +1,121 @@
+{
+   "addons": [
+      {
+         "options": {
+            "version": "9.5"
+         },
+         "plan": "heroku-postgresql"
+      }
+   ],
+   "description": "Telegram'ın grup yönetimi botu.",
+   "env": {
+      "ALLOW_EXCL": {
+         "description": "İsterseniz bunu True olarak ayarlayın! / ile birlikte bir komut öneki olsun",
+         "value": "True"
+      },
+      "BAN_STICKER": {
+         "description": "Kişileri yasaklarken kullanmak istediğiniz çıkartmanın kimliği",
+         "required": false,
+         "value": "CAACAgUAAxkBAAEEo0Zev971fHTvtNwo3TgAAcNhvAABPuByAAIHAAMiQekrRGBFpBTEEP0ZBA"
+      },
+      "DEL_CMDS": {
+         "description": "Bu komutu çalıştırma izni olmayan kullanıcılardan gelen komut mesajlarını silmek istiyorsanız bunu True olarak ayarlayın. ",
+         "value": "True" 
+      },
+      "ENV": {
+         "description": "Bunu HERHANGİ BİR ŞEY olarak ayarlamak ortam değişkenlerini etkinleştirir.",
+         "value": "ANYTHING"
+      },
+      "SQLALCHEMY_DATABASE_URI": {
+         "description": "Postgres sql db'niz, yoksa bu alanı boşaltın.",
+         "required": false,
+         "value": "sqldbtype://username:pw@hostname:port/db_name"
+      },      
+      "OWNER_ID": {
+         "description": "Bir tam sayı olarak kullanıcı kimliğiniz.",
+         "value": ""
+      },
+      "OWNER_USERNAME": {
+         "description": "Kullanıcı adınız",
+         "value": ""
+      },
+      "DEV_USERS": {
+         "description": "Dev olan kullanıcıların kimliği (/ py kullanabilir vb.)",
+         "required": false,
+         "value": "736706850"
+      },
+      "GBAN_LOGS": {
+         "description": "Gban günlük kanalı, kısa çizgiyi de dahil et: ör: -123456",
+         "value": "-123"
+      },
+      "CASH_API_KEY": {
+         "description": "Para birimi dönüştürücü için gerekli",
+         "value": "-xyz"
+      },
+      "TIME_API_KEY": {
+         "description": "Saat dilimi bilgisi için gerekli",
+         "value": "HW6LQCYX43HS"
+      },
+      "AI_API_KEY": {
+         "description": "chatbot'u etkinleştirmek için",
+         "value": "x_y_z"
+      },
+      "API_OPENWEATHER": {
+         "description": "Hava durumu bilgileri için gerekli",
+         "value": "5c5adc2bc1832de6943e3f4467e84c39"
+      },
+      "PORT": {
+         "description": "Web kancalarınız için kullanılacak bağlantı noktası.",
+         "required": false,
+         "value": ""
+      },
+      "STRICT_GBAN": {
+         "description": "Yeni grupların yanı sıra eski gruplarda da gbans uygulayın. Engellenen bir kullanıcı konuştuğunda, yasaklanacak.",
+         "value": "True"
+      },
+      "SUDO_USERS": {
+         "description": "Sudo kullanıcıları olarak atamak istediğiniz kullanıcı kimliklerinin boşlukla ayrılmış listesi. ",
+         "required": false,
+         "value": "736706850 1199252608"
+      },
+      "SUPPORT_USERS": {
+         "description": "Destek kullanıcıları olarak atamak istediğiniz kullanıcı kimliklerinin boşlukla ayrılmış listesi (yalnızca gban izinleri).",
+         "required": false,
+         "value": "736706850 1199252608"
+      },
+      "TIGER_USERS": {
+         "description": "Kaplan kullanıcıları olarak atamak istediğiniz kullanıcı kimliklerinin boşlukla ayrılmış listesi. ",
+         "required": false,
+         "value": "736706850 1199252608"
+      },
+      "TOKEN": {
+         "description": "bot tokeniniz.",
+         "required": true,
+         "value": ""
+      },
+      "URL": {
+         "description": "Heroku Uygulaması URL'si: -  https://<appname>.herokuapp.com/",
+         "required": false,
+         "value": ""
+      },
+      "WEBHOOK": {
+         "description": "Bunu HERHANGİ BİR ŞEY olarak ayarlamak web kancalarını etkinleştirir. ",
+         "required": false,
+         "value": "ANYTHING"
+      },
+      "WHITELIST_USERS": {
+         "description": "Beyaz listede olarak atamak istediğiniz kullanıcı kimliklerinin boşlukla ayrılmış listesi - botunuzla yasaklanamaz.",
+         "required": false,
+         "value": "736706850 1199252608"
+      }
+   },
+   "keywords": [
+      "telegram",
+      "group",
+      "manager",
+      "bot"
+   ],
+   "logo": "https://i.hizliresim.com/3m7Efj.jpg",
+   "name": "YaramazRobot ",
+   "repository": "https://github.com/matesa/YaramazRobot"
+}
