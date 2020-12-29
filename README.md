@@ -24,7 +24,7 @@ Kolay Yöntem Heroku Deploy Etmek🤗.
 
 ## Credits
 Thanks for;
-[intiqam](https://t.me/intiqam
+[intiqam](https://t.me/intiqam)
 
 
 
